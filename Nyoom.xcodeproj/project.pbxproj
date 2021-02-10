@@ -3,17 +3,29 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A4B590B25926BD800E466FB /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 4A4B590A25926BD800E466FB /* RxCocoa */; };
+		4A4B590D25926BD800E466FB /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = 4A4B590C25926BD800E466FB /* RxRelay */; };
+		4A4B590F25926BD800E466FB /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4A4B590E25926BD800E466FB /* RxSwift */; };
+		4A78EE62259ADC9800EBA3CA /* EventEditor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A78EE61259ADC9800EBA3CA /* EventEditor.storyboard */; };
+		4A78EE65259AE55100EBA3CA /* EventEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A78EE64259AE55100EBA3CA /* EventEditorViewController.swift */; };
 		4A7A7D5E255F34FA00F63B4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A7D5D255F34FA00F63B4F /* AppDelegate.swift */; };
 		4A7A7D60255F34FA00F63B4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A7D5F255F34FA00F63B4F /* ViewController.swift */; };
 		4A7A7D62255F34FE00F63B4F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A7A7D61255F34FE00F63B4F /* Assets.xcassets */; };
 		4A7A7D65255F34FE00F63B4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A7A7D63255F34FE00F63B4F /* Main.storyboard */; };
+		4A7A7D72255F376E00F63B4F /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A7D71255F376E00F63B4F /* Event.swift */; };
+		4A7A7D75255F378E00F63B4F /* EventTableCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A7D74255F378E00F63B4F /* EventTableCellView.swift */; };
+		4A7A7D7B255F385100F63B4F /* EventTableCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A7A7D7A255F385100F63B4F /* EventTableCellView.xib */; };
+		4A7A7D7E255F42D900F63B4F /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A7A7D7D255F42D800F63B4F /* DataManager.swift */; };
+		4ACC947B2599AB25000ED433 /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ACC947A2599AB25000ED433 /* WindowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A78EE61259ADC9800EBA3CA /* EventEditor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EventEditor.storyboard; sourceTree = "<group>"; };
+		4A78EE64259AE55100EBA3CA /* EventEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEditorViewController.swift; sourceTree = "<group>"; };
 		4A7A7D5A255F34FA00F63B4F /* Nyoom.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Nyoom.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A7A7D5D255F34FA00F63B4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4A7A7D5F255F34FA00F63B4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -21,6 +33,11 @@
 		4A7A7D64255F34FE00F63B4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A7A7D66255F34FE00F63B4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A7A7D67255F34FE00F63B4F /* Nyoom.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Nyoom.entitlements; sourceTree = "<group>"; };
+		4A7A7D71255F376E00F63B4F /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		4A7A7D74255F378E00F63B4F /* EventTableCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTableCellView.swift; sourceTree = "<group>"; };
+		4A7A7D7A255F385100F63B4F /* EventTableCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EventTableCellView.xib; sourceTree = "<group>"; };
+		4A7A7D7D255F42D800F63B4F /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		4ACC947A2599AB25000ED433 /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +45,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A4B590D25926BD800E466FB /* RxRelay in Frameworks */,
+				4A4B590B25926BD800E466FB /* RxCocoa in Frameworks */,
+				4A4B590F25926BD800E466FB /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4A4B590725926BD800E466FB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4A7A7D51255F34FA00F63B4F = {
 			isa = PBXGroup;
 			children = (
+				4A7A7D77255F37B000F63B4F /* Nyoom - Shared */,
 				4A7A7D5C255F34FA00F63B4F /* Nyoom */,
 				4A7A7D5B255F34FA00F63B4F /* Products */,
+				4A4B590725926BD800E466FB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,13 +83,43 @@
 			isa = PBXGroup;
 			children = (
 				4A7A7D5D255F34FA00F63B4F /* AppDelegate.swift */,
+				4ACC947A2599AB25000ED433 /* WindowController.swift */,
 				4A7A7D5F255F34FA00F63B4F /* ViewController.swift */,
 				4A7A7D61255F34FE00F63B4F /* Assets.xcassets */,
 				4A7A7D63255F34FE00F63B4F /* Main.storyboard */,
 				4A7A7D66255F34FE00F63B4F /* Info.plist */,
 				4A7A7D67255F34FE00F63B4F /* Nyoom.entitlements */,
+				4A7A7D6F255F373000F63B4F /* Views */,
 			);
 			path = Nyoom;
+			sourceTree = "<group>";
+		};
+		4A7A7D6F255F373000F63B4F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A7A7D74255F378E00F63B4F /* EventTableCellView.swift */,
+				4A78EE64259AE55100EBA3CA /* EventEditorViewController.swift */,
+				4A78EE61259ADC9800EBA3CA /* EventEditor.storyboard */,
+				4A7A7D7A255F385100F63B4F /* EventTableCellView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A7A7D70255F375F00F63B4F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4A7A7D71255F376E00F63B4F /* Event.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4A7A7D77255F37B000F63B4F /* Nyoom - Shared */ = {
+			isa = PBXGroup;
+			children = (
+				4A7A7D70255F375F00F63B4F /* Models */,
+				4A7A7D7D255F42D800F63B4F /* DataManager.swift */,
+			);
+			path = "Nyoom - Shared";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,8 +136,16 @@
 			buildRules = (
 			);
 			dependencies = (
+				4A4B5912259270C100E466FB /* PBXTargetDependency */,
+				4A4B5914259270C100E466FB /* PBXTargetDependency */,
+				4A4B5916259270C100E466FB /* PBXTargetDependency */,
 			);
 			name = Nyoom;
+			packageProductDependencies = (
+				4A4B590A25926BD800E466FB /* RxCocoa */,
+				4A4B590C25926BD800E466FB /* RxRelay */,
+				4A4B590E25926BD800E466FB /* RxSwift */,
+			);
 			productName = Nyoom;
 			productReference = 4A7A7D5A255F34FA00F63B4F /* Nyoom.app */;
 			productType = "com.apple.product-type.application";
@@ -90,7 +157,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1220;
-				LastUpgradeCheck = 1220;
+				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					4A7A7D59255F34FA00F63B4F = {
 						CreatedOnToolsVersion = 12.2;
@@ -106,6 +173,9 @@
 				Base,
 			);
 			mainGroup = 4A7A7D51255F34FA00F63B4F;
+			packageReferences = (
+				4A4B590525926BBA00E466FB /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 4A7A7D5B255F34FA00F63B4F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -122,6 +192,8 @@
 			files = (
 				4A7A7D62255F34FE00F63B4F /* Assets.xcassets in Resources */,
 				4A7A7D65255F34FE00F63B4F /* Main.storyboard in Resources */,
+				4A78EE62259ADC9800EBA3CA /* EventEditor.storyboard in Resources */,
+				4A7A7D7B255F385100F63B4F /* EventTableCellView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -132,12 +204,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A7A7D75255F378E00F63B4F /* EventTableCellView.swift in Sources */,
+				4A78EE65259AE55100EBA3CA /* EventEditorViewController.swift in Sources */,
+				4ACC947B2599AB25000ED433 /* WindowController.swift in Sources */,
+				4A7A7D7E255F42D900F63B4F /* DataManager.swift in Sources */,
 				4A7A7D60255F34FA00F63B4F /* ViewController.swift in Sources */,
+				4A7A7D72255F376E00F63B4F /* Event.swift in Sources */,
 				4A7A7D5E255F34FA00F63B4F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4A4B5912259270C100E466FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 4A4B5911259270C100E466FB /* RxCocoa */;
+		};
+		4A4B5914259270C100E466FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 4A4B5913259270C100E466FB /* RxRelay */;
+		};
+		4A4B5916259270C100E466FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 4A4B5915259270C100E466FB /* RxSwift */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		4A7A7D63255F34FE00F63B4F /* Main.storyboard */ = {
@@ -272,14 +364,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Nyoom/Nyoom.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 8;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Nyoom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.anli.Nyoom;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.anli.zoomlauncher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -291,14 +388,19 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Nyoom/Nyoom.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 8;
+				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Nyoom/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.anli.Nyoom;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MARKETING_VERSION = 0.4;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.anli.zoomlauncher;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -326,6 +428,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4A4B590525926BBA00E466FB /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4A4B590A25926BD800E466FB /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A4B590525926BBA00E466FB /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		4A4B590C25926BD800E466FB /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A4B590525926BBA00E466FB /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		4A4B590E25926BD800E466FB /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A4B590525926BBA00E466FB /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		4A4B5911259270C100E466FB /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A4B590525926BBA00E466FB /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		4A4B5913259270C100E466FB /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A4B590525926BBA00E466FB /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		4A4B5915259270C100E466FB /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4A4B590525926BBA00E466FB /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4A7A7D52255F34FA00F63B4F /* Project object */;
 }

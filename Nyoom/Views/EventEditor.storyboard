@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="YlW-9g-5hM">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Event Editor View Controller-->
+        <scene sceneID="2jR-th-c9w">
+            <objects>
+                <viewController id="YlW-9g-5hM" customClass="EventEditorViewController" customModule="Nyoom" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" misplaced="YES" id="ApB-mb-Mh9">
+                        <rect key="frame" x="0.0" y="0.0" width="271" height="174"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <popUpButton translatesAutoresizingMaskIntoConstraints="NO" id="ZXS-Im-NJ8">
+                                <rect key="frame" x="4" y="146" width="76" height="16"/>
+                                <popUpButtonCell key="cell" type="bevel" title="Calendar" bezelStyle="rounded" alignment="center" lineBreakMode="truncatingTail" state="on" imageScaling="proportionallyDown" inset="2" selectedItem="YBV-cL-6uT" id="4Lv-hd-hY0">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="Fcm-nY-JML">
+                                        <items>
+                                            <menuItem title="Calendar" state="on" id="YBV-cL-6uT">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                            </popUpButton>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="CtU-QT-g7J">
+                                <rect key="frame" x="10" y="121" width="251" height="23"/>
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" title="Event Name" id="pXL-5P-BSF">
+                                    <font key="font" metaFont="systemBold" size="19"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="B8n-Q3-K5O">
+                                <rect key="frame" x="73" y="60" width="122" height="21"/>
+                                <datePickerCell key="cell" alignment="left" drawsBackground="NO" datePickerStyle="textField" useCurrentDate="YES" id="gpi-BD-AIY">
+                                    <font key="font" metaFont="system"/>
+                                    <date key="date" timeIntervalSinceReferenceDate="630915163.32433796">
+                                        <!--2020-12-29 06:12:43 +0000-->
+                                    </date>
+                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <datePickerElements key="datePickerElements" year="YES" month="YES" day="YES" hour="YES" minute="YES"/>
+                                </datePickerCell>
+                            </datePicker>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="INj-jK-xwL">
+                                <rect key="frame" x="10" y="64" width="57" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Starts:" id="HKs-yk-rpN">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="MTC-KG-l3x">
+                                <rect key="frame" x="10" y="40" width="57" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Ends:" id="uJX-ka-Xb6">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <datePicker verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="2Fv-Zc-3Ev">
+                                <rect key="frame" x="73" y="36" width="122" height="21"/>
+                                <datePickerCell key="cell" alignment="left" drawsBackground="NO" datePickerStyle="textField" useCurrentDate="YES" id="fZi-Bv-ZuN">
+                                    <font key="font" metaFont="system"/>
+                                    <date key="date" timeIntervalSinceReferenceDate="630915163.33391905">
+                                        <!--2020-12-29 06:12:43 +0000-->
+                                    </date>
+                                    <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                    <datePickerElements key="datePickerElements" year="YES" month="YES" day="YES" hour="YES" minute="YES"/>
+                                </datePickerCell>
+                            </datePicker>
+                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="c2i-5t-ixc">
+                                <rect key="frame" x="10" y="16" width="57" height="16"/>
+                                <textFieldCell key="cell" lineBreakMode="clipping" title="Repeats:" id="N9i-Ih-j6g">
+                                    <font key="font" metaFont="system"/>
+                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                </textFieldCell>
+                            </textField>
+                            <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="ZUd-7e-GSq">
+                                <rect key="frame" x="70" y="9" width="130" height="25"/>
+                                <popUpButtonCell key="cell" type="roundTextured" title="Never" bezelStyle="texturedRounded" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" selectedItem="EKf-QW-aUn" id="UB9-HN-b3Y">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="menu"/>
+                                    <menu key="menu" id="hts-rS-BcQ">
+                                        <items>
+                                            <menuItem title="Never" state="on" id="EKf-QW-aUn"/>
+                                            <menuItem title="Every day" id="H0g-e1-1cJ"/>
+                                            <menuItem title="Every weekday" id="Se5-hg-Pbd"/>
+                                            <menuItem title="Every week" id="Ds5-fw-GMJ">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="Every month" id="FDl-8Z-olu">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                            <menuItem title="Every week" id="3q3-KK-tD9">
+                                                <modifierMask key="keyEquivalentModifierMask"/>
+                                            </menuItem>
+                                        </items>
+                                    </menu>
+                                </popUpButtonCell>
+                            </popUpButton>
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="y4N-Zz-TIh">
+                                <rect key="frame" x="10" y="88" width="249" height="18"/>
+                                <buttonCell key="cell" type="check" title="All-Day" bezelStyle="regularSquare" imagePosition="left" inset="2" id="b51-ve-vg1">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="B8n-Q3-K5O" firstAttribute="leading" secondItem="INj-jK-xwL" secondAttribute="trailing" constant="8" symbolic="YES" id="1qQ-rV-g2U"/>
+                            <constraint firstItem="CtU-QT-g7J" firstAttribute="top" secondItem="ZXS-Im-NJ8" secondAttribute="bottom" constant="2" id="2mo-D9-cB3"/>
+                            <constraint firstItem="MTC-KG-l3x" firstAttribute="top" secondItem="INj-jK-xwL" secondAttribute="bottom" constant="8" symbolic="YES" id="2ss-Wo-qZV"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2Fv-Zc-3Ev" secondAttribute="trailing" constant="12" id="34e-gQ-eQY"/>
+                            <constraint firstItem="INj-jK-xwL" firstAttribute="leading" secondItem="ApB-mb-Mh9" secondAttribute="leading" constant="12" id="42m-Ob-dqg"/>
+                            <constraint firstAttribute="trailing" secondItem="y4N-Zz-TIh" secondAttribute="trailing" constant="12" id="AK8-qW-Q25"/>
+                            <constraint firstItem="ZUd-7e-GSq" firstAttribute="firstBaseline" secondItem="c2i-5t-ixc" secondAttribute="firstBaseline" id="CUb-wT-sSp"/>
+                            <constraint firstItem="CtU-QT-g7J" firstAttribute="leading" secondItem="ApB-mb-Mh9" secondAttribute="leading" constant="12" id="GYQ-9m-5Bl"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZXS-Im-NJ8" secondAttribute="trailing" constant="9" id="LPO-Zv-6gg"/>
+                            <constraint firstItem="MTC-KG-l3x" firstAttribute="firstBaseline" secondItem="2Fv-Zc-3Ev" secondAttribute="firstBaseline" id="Npq-uY-VPm"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ZUd-7e-GSq" secondAttribute="trailing" constant="12" id="O60-Wr-Usw"/>
+                            <constraint firstItem="ZXS-Im-NJ8" firstAttribute="top" secondItem="ApB-mb-Mh9" secondAttribute="top" constant="12" id="PW1-xK-Fom"/>
+                            <constraint firstAttribute="bottom" secondItem="c2i-5t-ixc" secondAttribute="bottom" constant="16" id="Tue-y8-4Jr"/>
+                            <constraint firstItem="c2i-5t-ixc" firstAttribute="width" secondItem="MTC-KG-l3x" secondAttribute="width" id="V2a-Xi-Irn"/>
+                            <constraint firstItem="ZXS-Im-NJ8" firstAttribute="leading" secondItem="ApB-mb-Mh9" secondAttribute="leading" constant="9" id="W9m-ic-sKX"/>
+                            <constraint firstItem="MTC-KG-l3x" firstAttribute="leading" secondItem="ApB-mb-Mh9" secondAttribute="leading" constant="12" id="YZS-oc-luH"/>
+                            <constraint firstItem="c2i-5t-ixc" firstAttribute="top" secondItem="MTC-KG-l3x" secondAttribute="bottom" constant="8" symbolic="YES" id="dJu-3x-WHb"/>
+                            <constraint firstItem="ZUd-7e-GSq" firstAttribute="leading" secondItem="c2i-5t-ixc" secondAttribute="trailing" constant="8" symbolic="YES" id="gEs-Zr-wl3"/>
+                            <constraint firstAttribute="trailing" secondItem="CtU-QT-g7J" secondAttribute="trailing" constant="12" id="hOH-e0-7Am"/>
+                            <constraint firstItem="c2i-5t-ixc" firstAttribute="leading" secondItem="ApB-mb-Mh9" secondAttribute="leading" constant="12" id="iPL-6P-8v2"/>
+                            <constraint firstItem="B8n-Q3-K5O" firstAttribute="firstBaseline" secondItem="INj-jK-xwL" secondAttribute="firstBaseline" id="iU1-ea-fd8"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="B8n-Q3-K5O" secondAttribute="trailing" constant="12" id="jmI-l3-lja"/>
+                            <constraint firstItem="MTC-KG-l3x" firstAttribute="width" secondItem="INj-jK-xwL" secondAttribute="width" id="rY4-hT-Rts"/>
+                            <constraint firstItem="2Fv-Zc-3Ev" firstAttribute="leading" secondItem="MTC-KG-l3x" secondAttribute="trailing" constant="8" symbolic="YES" id="s5q-I4-jjH"/>
+                            <constraint firstItem="B8n-Q3-K5O" firstAttribute="top" secondItem="y4N-Zz-TIh" secondAttribute="bottom" constant="8" symbolic="YES" id="uTw-fF-CiQ"/>
+                            <constraint firstItem="y4N-Zz-TIh" firstAttribute="leading" secondItem="ApB-mb-Mh9" secondAttribute="leading" constant="12" id="uuu-KV-mGB"/>
+                            <constraint firstItem="y4N-Zz-TIh" firstAttribute="top" secondItem="CtU-QT-g7J" secondAttribute="bottom" constant="16" id="vpD-Pu-d2E"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="allDayCheckbox" destination="y4N-Zz-TIh" id="jTF-4i-hFE"/>
+                        <outlet property="endPicker" destination="2Fv-Zc-3Ev" id="dby-QH-DGJ"/>
+                        <outlet property="nameField" destination="CtU-QT-g7J" id="0pS-nX-0fh"/>
+                        <outlet property="startPicker" destination="B8n-Q3-K5O" id="6B8-6T-n9i"/>
+                    </connections>
+                </viewController>
+                <customObject id="nkm-8I-YDN" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3.5" y="77"/>
+        </scene>
+    </scenes>
+</document>

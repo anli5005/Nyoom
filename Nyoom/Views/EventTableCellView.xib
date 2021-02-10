@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" customObjectInstantitationMethod="direct">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner"/>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <tableCellView id="z3w-tx-9me" customClass="EventTableCellView" customModule="Nyoom" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="83"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="SOa-XN-qZX">
+                    <rect key="frame" x="6" y="53" width="374" height="18"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="8:00 - 8:30" id="YTJ-p0-FdS">
+                        <font key="font" textStyle="body" name=".SFNS-Regular"/>
+                        <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="ILL-aD-NYW">
+                    <rect key="frame" x="6" y="32" width="297" height="20"/>
+                    <textFieldCell key="cell" lineBreakMode="truncatingTail" truncatesLastVisibleLine="YES" title="Generic Zoom Meeting" id="T6c-Ke-Xve">
+                        <font key="font" metaFont="systemBold" size="17"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pVm-mP-iUn">
+                    <rect key="frame" x="6" y="12" width="374" height="16"/>
+                    <textFieldCell key="cell" lineBreakMode="clipping" title="Meeting ID" id="WIH-HW-gZM">
+                        <font key="font" metaFont="system"/>
+                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                    </textFieldCell>
+                </textField>
+                <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="D7i-Zc-G34">
+                    <rect key="frame" x="302" y="25" width="83" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="69" id="Uh6-oS-yOc"/>
+                    </constraints>
+                    <buttonCell key="cell" type="push" title="Join" bezelStyle="rounded" alignment="center" borderStyle="border" inset="2" id="ADI-JP-mgQ">
+                        <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                        <font key="font" metaFont="system"/>
+                    </buttonCell>
+                    <connections>
+                        <action selector="joinWithSender:" target="z3w-tx-9me" id="mwy-fv-E3R"/>
+                    </connections>
+                </button>
+            </subviews>
+            <constraints>
+                <constraint firstItem="D7i-Zc-G34" firstAttribute="centerY" secondItem="z3w-tx-9me" secondAttribute="centerY" id="4pC-ri-6M7"/>
+                <constraint firstAttribute="trailing" secondItem="SOa-XN-qZX" secondAttribute="trailing" constant="8" id="5Ah-Rf-KDE"/>
+                <constraint firstItem="ILL-aD-NYW" firstAttribute="top" secondItem="SOa-XN-qZX" secondAttribute="bottom" constant="1" id="67c-BT-V3x"/>
+                <constraint firstItem="SOa-XN-qZX" firstAttribute="top" secondItem="z3w-tx-9me" secondAttribute="top" constant="12" id="7Lu-Fw-G9V"/>
+                <constraint firstItem="ILL-aD-NYW" firstAttribute="leading" secondItem="z3w-tx-9me" secondAttribute="leading" constant="8" id="QP9-b0-Ltu"/>
+                <constraint firstAttribute="bottom" secondItem="pVm-mP-iUn" secondAttribute="bottom" constant="12" id="UeG-Y9-9yj"/>
+                <constraint firstAttribute="trailing" secondItem="D7i-Zc-G34" secondAttribute="trailing" constant="8" id="ao3-qo-T5b"/>
+                <constraint firstItem="pVm-mP-iUn" firstAttribute="top" secondItem="ILL-aD-NYW" secondAttribute="bottom" constant="4" id="cei-wa-fyJ"/>
+                <constraint firstAttribute="trailing" secondItem="pVm-mP-iUn" secondAttribute="trailing" constant="8" id="hyy-l4-Ejh"/>
+                <constraint firstItem="D7i-Zc-G34" firstAttribute="leading" secondItem="ILL-aD-NYW" secondAttribute="trailing" constant="8" symbolic="YES" id="o7U-37-SqV"/>
+                <constraint firstItem="SOa-XN-qZX" firstAttribute="leading" secondItem="z3w-tx-9me" secondAttribute="leading" constant="8" id="wcl-VF-v4I"/>
+                <constraint firstItem="pVm-mP-iUn" firstAttribute="leading" secondItem="z3w-tx-9me" secondAttribute="leading" constant="8" id="yuV-Us-eTZ"/>
+            </constraints>
+            <connections>
+                <outlet property="joinButton" destination="D7i-Zc-G34" id="1oD-QT-GRU"/>
+                <outlet property="joinButtonConstraint" destination="o7U-37-SqV" id="8ru-yv-1yk"/>
+                <outlet property="meetingIDLabel" destination="pVm-mP-iUn" id="hm1-y3-HVo"/>
+                <outlet property="timeLabel" destination="SOa-XN-qZX" id="Ygd-qn-ooR"/>
+                <outlet property="titleLabel" destination="ILL-aD-NYW" id="mRu-kM-j6M"/>
+            </connections>
+            <point key="canvasLocation" x="-89" y="217.5"/>
+        </tableCellView>
+    </objects>
+</document>
